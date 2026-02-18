@@ -1,6 +1,6 @@
-# 🎨 Jack & Sage — Shirt Design Tagger
+# 🎨 AI Design Tagger
 
-Automated image tagging pipeline for **Jack & Sage**, a premium outdoor apparel brand. Uses **OpenAI** and **Google Gemini** vision models to classify print-on-demand shirt artwork into structured metadata (Theme, Motifs, Style) compatible with Adobe Creative Cloud.
+Automated image tagging pipeline. Uses **OpenAI** and **Google Gemini** vision models to classify print-on-demand shirt artwork into structured metadata (Theme, Motifs, Style) compatible with Adobe Creative Cloud.
 
 ---
 
@@ -175,7 +175,7 @@ The system prompt enforces:
 - **Single theme** — Exactly one primary environment/activity from the schema
 - **130-character limit** — Combined motifs + style must stay under 130 chars (Adobe tag limit)
 - **Specificity** — Prioritizes concrete nouns ("Grizzly Bear" over "Animal") and transcribes all visible text
-- **Brand alignment** — Tuned for Jack & Sage's aesthetic: National Parks, Alpine, Coastal, Western
+- **Brand alignment** — Tuned for client's aesthetic: National Parks, Alpine, Coastal, Western
 
 Few-shot examples (19 human-tagged designs) are sent as image+JSON pairs in each API call to anchor the model's behavior.
 
